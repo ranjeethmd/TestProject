@@ -1,8 +1,8 @@
-# Modern .NET Console Application with Spectre.Console
+# Modern .NET Console Application with Spectre.Console (Ready for .NET 10)
 
 A modern C# console application that displays "Hello World" with enhanced styling using Spectre.Console library.
 
-> **Note**: This project is prepared for .NET 10 but currently targets .NET 8 (latest LTS) since .NET 10 is not yet released. The code structure and patterns are ready for .NET 10 migration when available.
+> **Note**: This project is structured and ready for .NET 10, but currently targets .NET 8 (latest available) since .NET 10 is not yet released. The code structure and patterns are fully compatible with .NET 10 when it becomes available.
 
 ## Features
 
@@ -11,6 +11,7 @@ A modern C# console application that displays "Hello World" with enhanced stylin
 - 📊 **System Information Display**: Shows runtime environment details
 - 🎨 **Rich Formatting**: Panels, tables, colors, and Unicode symbols
 - ⚡ **Fast Performance**: Optimized for modern .NET
+- 🚀 **Future-Ready**: Code structure ready for .NET 10 migration
 
 ## Requirements
 
@@ -23,6 +24,7 @@ A modern C# console application that displays "Hello World" with enhanced stylin
 ├── src/
 │   ├── HelloWorld.csproj    # Project file (currently .NET 8, ready for .NET 10)
 │   └── Program.cs           # Main application with top-level program
+├── .gitignore              # Git ignore patterns for .NET projects
 └── README.md               # This file
 ```
 
@@ -94,7 +96,7 @@ When .NET 10 becomes available, simply update the `TargetFramework` in `HelloWor
 <TargetFramework>net10.0</TargetFramework>
 ```
 
-The code is already using modern C# patterns that will be compatible with .NET 10.
+The code is already using modern C# patterns that will be fully compatible with .NET 10.
 
 ## Development
 
