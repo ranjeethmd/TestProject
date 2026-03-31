@@ -1,13 +1,13 @@
 using Spectre.Console;
 
 // Modern C# top-level program with Spectre.Console
-// Display "Hello World" with enhanced styling for .NET 10 (currently .NET 8)
+// Display "Hello World" with enhanced styling for .NET 10
 
 // Clear the console for a clean start
 AnsiConsole.Clear();
 
 // Display a welcome banner
-var welcomeRule = new Rule("[bold blue]🌟 Welcome to Modern .NET Console Application 🌟[/]")
+var welcomeRule = new Rule("[bold blue]🌟 Welcome to Modern .NET 10 Console Application 🌟[/]")
 {
     Style = Style.Parse("blue dim"),
     Alignment = Justify.Center
@@ -19,7 +19,7 @@ AnsiConsole.WriteLine();
 var helloPanel = new Panel(new Markup("[bold yellow on blue] Hello World! [/]"))
     .Border(BoxBorder.Double)
     .BorderColor(Color.Cyan1)
-    .Header("[bold magenta]🚀 .NET 10 Ready Application 🚀[/]")
+    .Header("[bold magenta]🚀 .NET 10 Application 🚀[/]")
     .HeaderAlignment(Justify.Center)
     .Padding(3, 1)
     .Expand();
@@ -80,8 +80,8 @@ grid.AddRow(
 
 grid.AddRow(
     new Markup("[bold green]🚀[/]"),
-    new Markup("[bold]Future Ready[/]"),
-    new Markup("[dim]Prepared for .NET 10 with modern architecture[/]")
+    new Markup("[bold].NET 10 Ready[/]"),
+    new Markup("[dim]Built with the latest .NET 10 framework[/]")
 );
 
 AnsiConsole.Write(grid);
@@ -91,13 +91,14 @@ AnsiConsole.WriteLine();
 AnsiConsole.Write(new Rule("[bold cyan]Thank You[/]").RuleStyle("dim"));
 
 var goodbyePanel = new Panel(
-    new Markup("[bold rainbow]Thank you for exploring our modern .NET console application! ✨\n\n" +
+    new Markup("[bold rainbow]Thank you for exploring our modern .NET 10 console application! ✨\n\n" +
                "[dim]This application demonstrates:[/]\n" +
                "• [green]Spectre.Console[/] for beautiful terminal UI\n" +
                "• [blue]Modern C# language features[/]\n" +
                "• [yellow]Cross-platform compatibility[/]\n" +
-               "• [magenta]Clean architecture patterns[/]\n\n" +
-               "[bold]Ready for .NET 10 when it arrives! 🎉[/]"))
+               "• [magenta]Clean architecture patterns[/]\n" +
+               "• [cyan].NET 10 framework capabilities[/]\n\n" +
+               "[bold]Built with .NET 10! 🎉[/]"))
     .Border(BoxBorder.Rounded)
     .BorderColor(Color.Green)
     .Header("[bold blue]🎊 Application Complete 🎊[/]")

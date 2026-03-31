@@ -1,8 +1,6 @@
-# Modern .NET Console Application with Spectre.Console (Ready for .NET 10)
+# Modern .NET 10 Console Application with Spectre.Console
 
-A modern C# console application that displays "Hello World" with enhanced styling using Spectre.Console library.
-
-> **Note**: This project is structured and ready for .NET 10, but currently targets .NET 8 (latest available) since .NET 10 is not yet released. The code structure and patterns are fully compatible with .NET 10 when it becomes available.
+A modern C# console application that displays "Hello World" with enhanced styling using Spectre.Console library, built with .NET 10.
 
 ## Features
 
@@ -10,19 +8,19 @@ A modern C# console application that displays "Hello World" with enhanced stylin
 - 🌈 **Enhanced Console Output**: Beautiful styling with Spectre.Console
 - 📊 **System Information Display**: Shows runtime environment details
 - 🎨 **Rich Formatting**: Panels, tables, colors, and Unicode symbols
-- ⚡ **Fast Performance**: Optimized for modern .NET
-- 🚀 **Future-Ready**: Code structure ready for .NET 10 migration
+- ⚡ **Fast Performance**: Optimized for .NET 10
+- 🚀 **Latest Framework**: Built with .NET 10
 
 ## Requirements
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later
 - Terminal with Unicode and color support (Windows Terminal, macOS Terminal, or modern Linux terminal)
 
 ## Project Structure
 
 ```
 ├── src/
-│   ├── HelloWorld.csproj    # Project file (currently .NET 8, ready for .NET 10)
+│   ├── HelloWorld.csproj    # Project file targeting .NET 10
 │   └── Program.cs           # Main application with top-level program
 ├── .gitignore              # Git ignore patterns for .NET projects
 └── README.md               # This file
@@ -80,23 +78,13 @@ The application displays:
 
 ## Technical Details
 
-- **Current Target Framework**: `net8.0` (ready for `net10.0` when available)
+- **Target Framework**: `net10.0`
 - **Language Features**: 
   - Top-level programs (C# 9+)
   - Implicit usings (C# 10+)
   - Nullable reference types enabled
 - **Console Enhancement**: Spectre.Console for rich terminal UI
 - **Modern Patterns**: Minimal API-style program structure
-
-## Migration to .NET 10
-
-When .NET 10 becomes available, simply update the `TargetFramework` in `HelloWorld.csproj`:
-
-```xml
-<TargetFramework>net10.0</TargetFramework>
-```
-
-The code is already using modern C# patterns that will be fully compatible with .NET 10.
 
 ## Development
 
@@ -135,7 +123,7 @@ AnsiConsole.WriteLine($"Hello {name}!");
 
 ### Common Issues
 
-1. **Target framework not found**: Ensure you have the required .NET SDK installed
+1. **Target framework not found**: Ensure you have .NET 10 SDK installed
 2. **Colors not showing**: Use a modern terminal that supports ANSI colors
 3. **Unicode symbols broken**: Ensure your terminal supports UTF-8 encoding
 
@@ -160,4 +148,4 @@ This project is part of a learning exercise and is available under the MIT Licen
 
 ---
 
-Built with ❤️ using .NET 8 and Spectre.Console (ready for .NET 10)
+Built with ❤️ using .NET 10 and Spectre.Console
